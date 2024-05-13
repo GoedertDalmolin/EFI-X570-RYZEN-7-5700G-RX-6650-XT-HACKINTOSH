@@ -177,6 +177,22 @@ O boot args deve ficar dessa forma: "-v keepsyms=1 agdpmod=pikera"
 - Dentro do config.plist execute o File > OC Clean SnapShot.
 - Salve e feche o arquivo.
 
+
+# Removendo arquivos desnecessarios da EFI
+Acesse a pastas Drivers no caminho: "EFI\OC\Drivers"
+
+- Apague o arquivo "OpenVariableRuntimeDxe.efi".
+- Apague o arquivo "OpenUsbKbDxe.efi".
+
+- Abra o ProperTree: "ProperTree-master\ProperTree.bat".
+- Alterar o Misc > Boot > Picker Mode > External.
+- Alterar o Misc > Security > Valut > Optional.
+- Alterar o Misc > Boot > HideAuxiliary > False.
+- Alterar o Misc > Boot > PollAppleHotKeys > True;
+
+Por fim:
+- Acesse: File > Open > Selecione o config.plist dentro de "EFI\OC\config.plist".
+  
 # SSDT Time
 
 Abra o SSDT Time.
@@ -213,6 +229,12 @@ Novamente dentro da pasta "Results" no caminho "SSDTTime-master\Results":
 
 Por fim:
 - Insira a letra: q (Quit) e pressione Enter para sair.
+
+# Verificando se o config.plist está correto
+- Acesse o seguinte caminho da release baixada do open core: "OpenCore-1.0.0-RELEASE\Utilities\ocvalidate"
+- Abra o terminal nesse diretório.
+- Insira o seguinte comando: "ocvalidate "CAMINHO-CONFIG.PLIST""
+- Substitua "CAMINHO-CONFIG.PLIST" pelo caminho do arquivo config.plist.
 
 # Baixando a Imagem de Recovery do MacOS
 
