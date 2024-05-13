@@ -166,7 +166,7 @@ E substitua o valor do campo Replace para o indicado na [documentação](https:/
 
 Lembre de salvar apos alterar cada registro.
 
-# Adicionando suporte a placa não nativa
+# Adicionando suporte a GPU não nativa
 
 - Acesse o [respositorio](https://github.com/TylerLyczak/Unsupported-6900XT-Hackintosh-Fix) que contem a SSDT-BRG0.dsl.
 - Baixe o Arquivo [SSDT-BRG0.dsl](https://github.com/TylerLyczak/Unsupported-6900XT-Hackintosh-Fix/blob/master/SSDT-BRG0.dsl). 
