@@ -1,3 +1,5 @@
+# (IN PROGRESS)
+
 # Guia Hackintosh Asus Tuf X570-PLUS/BR + Ryzen 7 5700G + RX 6650 XT
 
 
@@ -91,10 +93,10 @@ Baixe as Seguintes Kexts:
 | [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases)                              | 1.3.2  | Emulates the SMC chip found on real macs, without this macOS will not boot. Alternative is FakeSMC which can have better or worse support, most commonly used on legacy hardware. |
 | [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases)                           | 1.6.6  | Used for graphics patching, DRM fixes, board ID checks, framebuffer fixes, etc; all GPUs benefit from this kext.                                                                          |
 | [Apple ALC](https://github.com/acidanthera/AppleALC/releases/tag/1.9.0)                               | 1.9.0  | Para funcionar o som do dispositivo.                                                                                                                                                      |
-| [RTL8111_driver_for_OS_X](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases)                | 2.4.2  | Para corrijir erros da placa de rede e internet.                                                                                                                                          |
-| [NVMe Fix](https://github.com/acidanthera/NVMeFix/releases)                               | 1.1.1  | Para corrijir erros de gerenciamento de energia do ssd nvme.                                                                                                                              |
-| [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases)                         | 1.1.3  | Para corrijir erros do processador.                                                                                                                                                       |
-| [SMCRadeonSensors](https://github.com/ChefKissInc/SMCRadeonSensors/releases)                       | 2.0.0  | Para corrijir obter dados da temperatura da placa de video.                                                                                                                               |
+| [RTL8111_driver_for_OS_X](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases)                | 2.4.2  | Para corrigir erros da placa de rede e internet.                                                                                                                                          |
+| [NVMe Fix](https://github.com/acidanthera/NVMeFix/releases)                               | 1.1.1  | Para corrigir erros de gerenciamento de energia do ssd nvme.                                                                                                                              |
+| [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases)                         | 1.1.3  | Para corrigir erros do processador.                                                                                                                                                       |
+| [SMCRadeonSensors](https://github.com/ChefKissInc/SMCRadeonSensors/releases)                       | 2.0.0  | Para corrigir obter dados da temperatura da placa de video.                                                                                                                               |
 | [FeatureUnlock](https://github.com/acidanthera/FeatureUnlock/releases)                            | 1.1.5  | Para desbloquear conteudos como Sidecar, NightShift, AirPlay, Universal Control and Continuity Camera support dentro do MacOS.                                                             |
 
 
