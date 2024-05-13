@@ -166,35 +166,7 @@ E substitua o valor do campo Replace para o indicado na [documentação](https:/
 
 Lembre de salvar apos alterar cada registro.
 
-# Adicionando suporte a GPU não nativa
-
-- Acesse o [respositorio](https://github.com/TylerLyczak/Unsupported-6900XT-Hackintosh-Fix) que contem a SSDT-BRG0.dsl.
-- Baixe o Arquivo [SSDT-BRG0.dsl](https://github.com/TylerLyczak/Unsupported-6900XT-Hackintosh-Fix/blob/master/SSDT-BRG0.dsl). 
-
-- Acesse o Device Manager do seu windows e ache sua placa de video.
-- Clique com o direito sobre sua placa de video.
-- Acesse propriedades.
-
-![Device Maneger](.github/device-manager.png)
-
-- Acesse a guia detalhes.
-- Altere o combobox Propriedade para Caminhos do Local.
-- Copie o caminho para sua placa e altere nos locais devidos dentro do arquivo SSDT-BRG0.dsl que baixou anteriormente.
-
-Obs: O caminho dentro do Device Maneger é exibido da seguinte forma:
-
-ACPI(_SB_)#ACPI(PCI0)#ACPI(GPP0)#ACPI(SWUS)#ACPI(SWDS)#ACPI(VGA_)
-
-Porem oque importa está dentro dos parenteses.
-
-- Copie o arquivo que acabamos de editar (SSDT-BRG0.dsl).
-- Cole o arquivo dentro da pasta do iasl (iasl-win-20240321).
-- Abra o terminal nesse diretorio do iasl.
-- Execute o seguinte comando: "iasl.exe SSDT-BRG0.dsl".
-
-Sera gerado o arquivo "SSDT-BRG0.aml".
-
-- Copie o arquivo SSDT-BRG0.aml para dentro da sua EFI no caminho: "EFI\OC\ACPI".
+# Adicionando suporte a GPU
 
 - Abra o arquivo "config.plist" da sua EFI com o ProperTree.
 - Acesse: Root > NVRAM > Add > (Key com final "...9F82) >> boot-args
@@ -261,6 +233,10 @@ Seu pendrive por fim deve conter o seguinte:
 
 
 ![Arquivos Pendrive](.github/arquivos-pendrive.png)
+
+# Realizando o FakeId da GPU não suportada
+
+Faça o download da [SSDT-BRG0.aml](https://github.com/luchina-gabriel/youtube-files/blob/main/Fake-GPUID.zip)
 
 # Referencias:
 - [OpenCore Official Guide](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html).
