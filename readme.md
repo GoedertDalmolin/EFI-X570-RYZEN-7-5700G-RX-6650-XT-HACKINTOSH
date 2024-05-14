@@ -189,8 +189,14 @@ O boot args deve ficar dessa forma: "-v keepsyms=1 agdpmod=pikera"
 - Dentro do config.plist execute o File > OC Clean SnapShot.
 - Salve e feche o arquivo.
 
-
 # Removendo arquivos desnecessarios da EFI
+
+Tools:
+
+- Acesse a pasta Tools no caminho: "EFI\OC\Tools"
+- Apague todos os .efi.
+
+Drivers:
 
 - Acesse a pastas Drivers no caminho: "EFI\OC\Drivers"
 
