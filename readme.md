@@ -203,10 +203,11 @@ Drivers:
 Apague todos os arquivos exceto:
 
 - AudioDxe.efi
-- FirmwareSettingsEntry.efi
 - OpenCanopy.efi
 - OpenRuntime.efi
 - ResetNvramEntry.efi
+
+Baixe o [HfsPlus.efi](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi) e coloque nessa pasta.
 
 Acesse e baixe o seguinte [repositório](https://github.com/acidanthera/OcBinaryData/tree/master).
 
