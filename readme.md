@@ -191,20 +191,35 @@ O boot args deve ficar dessa forma: "-v keepsyms=1 agdpmod=pikera"
 
 
 # Removendo arquivos desnecessarios da EFI
-Acesse a pastas Drivers no caminho: "EFI\OC\Drivers"
 
-- Apague o arquivo "OpenVariableRuntimeDxe.efi".
-- Apague o arquivo "OpenUsbKbDxe.efi".
+- Acesse a pastas Drivers no caminho: "EFI\OC\Drivers"
 
-- Abra o ProperTree: "ProperTree-master\ProperTree.bat".
+Apague todos os arquivos exceto:
+
+- AudioDxe.efi
+- FirmwareSettingsEntry.efi
+- OpenCanopy.efi
+- OpenRuntime.efi
+- ResetNvramEntry.efi
+
+Acesse e baixe o seguinte [repositório](https://github.com/acidanthera/OcBinaryData/tree/master).
+
+- Abra a pasta Resources baixada.
+- Copie Todas as pastas exceto audio.
+- Substituas as mesmas dentro de sua EFI.
+
+Abra o ProperTree:
+
+- Acesse: File > Open > Selecione o config.plist dentro de "EFI\OC\config.plist".
 - Alterar o Misc > Boot > Picker Mode > External.
 - Alterar o Misc > Security > Valut > Optional.
 - Alterar o Misc > Boot > HideAuxiliary > False.
 - Alterar o Misc > Boot > PollAppleHotKeys > True;
+- Dentro do config.plist execute o File > OC Clean SnapShot.
+- Salve e feche o arquivo. 
 
-Por fim:
-- Acesse: File > Open > Selecione o config.plist dentro de "EFI\OC\config.plist".
-  
+
+
 # SSDT Time
 
 Abra o SSDT Time.
