@@ -268,10 +268,10 @@ Caso deseje remover a mensagem de aviso ao instalar software não gerenciados pe
 
 # Instalando as Ferramentas dentro do MacOS
 
-[Hackintool](https://github.com/benbaker76/Hackintool/releases/tag/4.0.3)
-[Python](https://www.python.org/) 
-[ProperTree](https://github.com/corpnewt/ProperTree)
-[MaciASL](https://github.com/acidanthera/MaciASL/releases/tag/1.6.4)
+- [Hackintool](https://github.com/benbaker76/Hackintool/releases/tag/4.0.3)
+- [Python](https://www.python.org/) 
+- [ProperTree](https://github.com/corpnewt/ProperTree)
+- [MaciASL](https://github.com/acidanthera/MaciASL/releases/tag/1.6.4)
 
 
 # Realizando o FakeId da GPU não suportada
