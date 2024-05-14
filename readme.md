@@ -367,6 +367,26 @@ Abra o config.plist da sua EFI.
 - Acesse: Root > Miusc > Boot > Laucher Option > altere para: Full
 - Salve e feche o arquivo.
 
+# Ajustando o Disco do MacOS de Externo Para Interno
+
+- Abra o Hackintool >> Acesse o menu PCIe.
+- Ordene a listagem por Class.
+
+Para cada registro contendo Class = Mass storage controller faça o seguinte processo:
+- Clique com o direito sobre o registro > Copy Device Path.
+- Abra seu config.plist de sua EFI.
+- Acesse: Root > DeviceProperties > Add.
+- Clique com o direito sobre Add > Selecione: New child under Add.
+- Mude o Type desse registro criado para Dictionary.
+- Cole o Device Path que você copiou no chave criada.
+- Novamente clique com o direito sobre o registro criado > Selecione: New child under Add.
+- Na chave informe: built-in
+- Mude o Type para Data.
+- No value coloque: 01000000.
+- Crie uma chave do type String com a key = # comment: NVME
+
+- Salve e feche o arquivo.
+
 # Referencias:
 - [OpenCore Official Guide](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html).
 - Youtube Channel: [Universo Hackintosh](https://www.youtube.com/@UniversoHackintosh)
