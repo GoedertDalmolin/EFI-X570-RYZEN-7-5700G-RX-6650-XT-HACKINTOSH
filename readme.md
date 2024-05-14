@@ -256,6 +256,24 @@ Seu pendrive por fim deve conter o seguinte:
 
 ![Arquivos Pendrive](.github/arquivos-pendrive.png)
 
+Agora apenas reinicialize sua maquina, e escolha no boot menu seu pendrive.
+A partir do MacRecovery escolha um disco e realize a instalação do macos.
+
+# Após instalar o MacOS
+A partir de agora será instalado diversas ferramentas não oficiais da apple.
+Caso deseje remover a mensagem de aviso ao instalar software não gerenciados pela AppleStore:
+
+- Abra o terminal.
+- Execute o seguinte comando: "sudo spctl --master-disable"
+
+# Instalando as Ferramentas dentro do MacOS
+
+[Hackintool](https://github.com/benbaker76/Hackintool/releases/tag/4.0.3)
+[Python](https://www.python.org/) 
+[ProperTree](https://github.com/corpnewt/ProperTree)
+[MaciASL](https://github.com/acidanthera/MaciASL/releases/tag/1.6.4)
+
+
 # Realizando o FakeId da GPU não suportada
 
 Faça o download da [SSDT-BRG0.aml](https://github.com/luchina-gabriel/youtube-files/blob/main/Fake-GPUID.zip)
