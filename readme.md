@@ -349,18 +349,12 @@ Dentro do seu config.plist da sua EFI:
 - Dentro do config.plist execute o File > OC Clean SnapShot.
 - Salve e feche o arquivo.
 
-# Permitindo navegar entre MacOS e Windows 
-
-- Encontre o disco que está o windows.
-- Aperte com o direito > Quick Actions > Mount EFI.
-- Copie a pasta Microsoft.
-- Encontre o disco que está o Macos Instalado.
-- Aperte com o direito > Quick Actions > Mount EFI.
-- Acesse a pasta EFI.
-- Cole a pasta Microsoft antes copiada.
+# Permitindo navegar entre MacOS e Windows de outro disco 
 
 Abra o config.plist da sua EFI.
 
+- Acesse: Root > Misc > Security
+- Altere o ScanPolicy para 0.
 - Acesse: Root > Misc > Boot
 - Altere o TimeOut para 10.
 - Salve as Alterações.
