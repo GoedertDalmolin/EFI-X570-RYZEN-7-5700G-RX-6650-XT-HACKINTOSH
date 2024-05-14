@@ -224,8 +224,6 @@ Abra o ProperTree:
 - Dentro do config.plist execute o File > OC Clean SnapShot.
 - Salve e feche o arquivo. 
 
-
-
 # SSDT Time
 
 Abra o SSDT Time.
@@ -350,6 +348,23 @@ Dentro do seu config.plist da sua EFI:
 - Dentro do config.plist execute o File > OC Clean SnapShot.
 - Salve e feche o arquivo.
 
+# Permitindo navegar entre MacOS e Windows 
+
+- Encontre o disco que está o windows.
+- Aperte com o direito > Quick Actions > Mount EFI.
+- Copie a pasta Microsoft.
+- Encontre o disco que está o Macos Instalado.
+- Aperte com o direito > Quick Actions > Mount EFI.
+- Acesse a pasta EFI.
+- Cole a pasta Microsoft antes copiada.
+
+Abra o config.plist da sua EFI.
+
+- Acesse: Root > Misc > Boot
+- Altere o TimeOut para 10.
+- Salve as Alterações.
+- Dentro do config.plist execute o File > OC Clean SnapShot.
+- Salve e feche o arquivo.
 
 # Referencias:
 - [OpenCore Official Guide](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html).
