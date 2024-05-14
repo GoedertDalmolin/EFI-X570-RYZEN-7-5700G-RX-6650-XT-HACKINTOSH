@@ -272,11 +272,51 @@ Caso deseje remover a mensagem de aviso ao instalar software não gerenciados pe
 - [Python](https://www.python.org/) 
 - [ProperTree](https://github.com/corpnewt/ProperTree)
 - [MaciASL](https://github.com/acidanthera/MaciASL/releases/tag/1.6.4)
+- [GfxUtil](https://github.com/acidanthera/gfxutil/releases)
 
 
 # Realizando o FakeId da GPU não suportada
 
-Faça o download da [SSDT-BRG0.aml](https://github.com/luchina-gabriel/youtube-files/blob/main/Fake-GPUID.zip)
+- Faça o download da [SSDT-BRG0.aml](https://github.com/luchina-gabriel/youtube-files/blob/main/Fake-GPUID.zip)
+- Abra o GFX Util, encontre a linha no qual consta “GFX0”
+
+No meu caso:
+03:00.0 1002:73ef /PCI0@0/GPP0@1,1/VGA@0/LCD@0/GFX0@0 = PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)
+
+- Abra o arquivo SSDT-BRG0.aml no caminho “Fake-GPUID/SSDT-BRG0.aml”
+- Subistitua as devidas linhas colocando o novo endereço coletado no GFX0
+
+Arquivo original:
+- External (_SB_.PCI0.PEG1.PEGP, DeviceObj)
+
+Depois de alterado:
+- External (_SB_.PCI0.GPP0.VGA.LCD, DeviceObj)
+
+Obs: Altere tanto na linha do “External” como na linha do “Scope”.
+
+- Após isso aperte em Compile.
+- Depois acesse em File >> Save.
+
+Caso voce abra o arquivo "SSDT-BRG0.aml" com o MaciASL novamente você vai ver que ele colocou underlines na linha "External" oque é considerado normal.
+
+- Copie o Arquivo SSDT-BRG0.aml que editou para dentro do caminho da sua EFI: "EFI\OC\ACPI".
+
+- Dentro do GFX Util na linha GFX0 copie tudo oque esta posterior ao
+igual. No Meu caso:
+
+PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)
+
+- Acesse o arquivo config.plist da pasta fake-gpuid
+- Altere a chave PCI Path to RX 6650 XT para a linha copiada.
+
+Dentro do seu config.plist da sua EFI:
+- No boot-args também adicione: -radcodec.
+- Copie a chave que alterou no config.plist da pasta fake-gpuid para seu config.plist.
+
+- Salve as Alterações.
+- Dentro do config.plist execute o File > OC Clean SnapShot.
+- Salve e feche o arquivo.
+
 
 # Referencias:
 - [OpenCore Official Guide](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html).
