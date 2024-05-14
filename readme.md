@@ -387,6 +387,28 @@ Para cada registro contendo Class = Mass storage controller faça o seguinte pro
 
 - Salve e feche o arquivo.
 
+# Ajustando Som ao ligar MacOS
+
+- Abra o Hackintool >> PCIe.
+- Ordene a listagem por Subclass.
+- Busque por Audio device.
+
+Encontre o registro com:
+- Class = Multimedia controller
+- SubClass = Audio Device
+- IOReg Name deve conter /HDEF
+
+Por fim:
+- Pressione o botão direito do mouse > Copy Device Path.
+- Acesse seu config.plist da sua EFI.
+- Root > UEFI > Audio > AudioDevice > Cole no Valor oque foi copiado.
+
+No meu caso: PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x6)
+
+- Root > UEFI > Audio > AudioOutMask > Altere para -1.
+- Root > UEFI > Audio > AudioSuport > Altere para True.
+
+
 # Referencias:
 - [OpenCore Official Guide](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html).
 - Youtube Channel: [Universo Hackintosh](https://www.youtube.com/@UniversoHackintosh)
