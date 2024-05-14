@@ -387,6 +387,33 @@ Para cada registro contendo Class = Mass storage controller faça o seguinte pro
 
 - Salve e feche o arquivo.
 
+# Ajustando Som
+
+- Abra seu config.plist da sua EFI.
+- Acesse: Root > DeviceProperties > Add.
+- Crie um novo dictionary e coloque o Device Path como nome desse campo.
+
+No meu caso: PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x6)
+
+- Crie um novo filho para esse campo.
+- Coloque a Key = layout-id
+- Coloque o Type = Number
+
+Busque neste [repositório](https://github.com/acidanthera/AppleALC/wiki/Supported-codecs) o layout adequado ao seu hardware.
+No meu caso é um Realtek S1200A.
+Buscando por S1200A encontrei o Realtek	ALCS1200A.
+
+Onde temos os seguintes layouts:
+layout 1, 2, 3, 7, 11, 49, 50, 51, 52, 69
+
+O ideal é que você teste até funcionar.
+
+- Portanto escolha um e coloque como Value da Key layout-id.
+
+Agora crie outro filho para o  PciRoot(0...
+- Coloque a Key = # comment: Audio
+- Type String
+
 # Ajustando Som ao ligar MacOS
 
 - Abra o Hackintool >> PCIe.
