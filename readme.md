@@ -361,6 +361,12 @@ Abra o config.plist da sua EFI.
 - Dentro do config.plist execute o File > OC Clean SnapShot.
 - Salve e feche o arquivo.
 
+# Protegendo a EFI de possivel alterações oriundas do Windows
+
+- Acesse seu config.plist.
+- Acesse: Root > Miusc > Boot > Laucher Option > altere para: Full
+- Salve e feche o arquivo.
+
 # Referencias:
 - [OpenCore Official Guide](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html).
 - Youtube Channel: [Universo Hackintosh](https://www.youtube.com/@UniversoHackintosh)
