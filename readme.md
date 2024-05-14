@@ -1,10 +1,21 @@
 # (IN PROGRESS)
 
-# Guia Hackintosh Asus Tuf X570-PLUS/BR + Ryzen 7 5700G + RX 6650 XT
+# Hackintosh Asus Tuf X570-PLUS/BR + Ryzen 7 5700G + RX 6650 XT
+<div align="center">
+
+| Recursos neste Repositório     | Status    |
+|--------------------------------|-----------|
+| EFI Pronta para download       | &#9745;   |
+| Guia para criar essa EFI       | &#9745;   |
+
+
+</div>
+
 
 
 # Resumo:
-
+<div align="center">
+  
 | Componente       | Versão                                     |
 |------------------|--------------------------------------------|
 | MacOS            | 14.4.1 (Sonoma)                            |
@@ -14,6 +25,7 @@
 | CPU              | AMD Ryzen 7 5700G                          |
 | GPU              | AMD Radeon RX 6650 XT                      |
 
+</div>
 
 # Passo a Passo:
 
