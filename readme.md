@@ -5,7 +5,7 @@
 
 | Recursos neste Repositório     | Status    |
 |--------------------------------|-----------|
-| EFI Pronta para download       | &#9745;   |
+| EFI pronta para download       | &#9745;   |
 | Guia para criar essa EFI       | &#9745;   |
 
 
