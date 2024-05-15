@@ -20,6 +20,8 @@
 
 # Features 
 
+<div align="center">
+
 | Feature              | Working |
 |----------------------|---------|
 | GPU Fully Supported  | ✅      |
@@ -30,6 +32,8 @@
 | Bluetooth            | ❌      |
 | Wifi                 | ❌      |
 | AirDrop              | ❌      |
+
+</div>
 
 **Note:** I don't have a Wireless Network Interface Controller.
 
