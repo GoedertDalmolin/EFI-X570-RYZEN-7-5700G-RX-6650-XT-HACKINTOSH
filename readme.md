@@ -1,7 +1,7 @@
 # Hackintosh Asus Tuf X570-PLUS/BR + Ryzen 7 5700G + RX 6650 XT
 
 <h1 align="center">
-<img src='.github/about-system-finish.png' width="80%">
+<img src='.github/about-system-finish.png' width="90%">
 </h1>
 
 # Conteúdo deste repositório
