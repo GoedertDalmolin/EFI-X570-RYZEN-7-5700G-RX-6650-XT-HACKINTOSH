@@ -47,7 +47,7 @@ No meu caso:
 | Audio Adapter    | Realtek S1200A                       |                                                                                            |
 | Network Adapter  | Realtek® L8200A (LAN Turbo LAN Utility) | Realtek Gaming GbE Familly Controller                                                                                         |
 
-2 - Atualizar a BIOS:
+# Atualizar a BIOS:
 
 É extremamente recomendado que atualize a bios, uma vez que sempre é liberado novas atualizações com correções de erros e proteções aos componentes.
 
@@ -55,7 +55,7 @@ Baixe a bios no site oficial da Asus - [Download Here](https://www.asus.com/br/m
 
 No meu caso eu atualizei a Bios para a versão 5013 (2024/04/04).
 
-# 3 - Configurar Parametros da BIOS:
+# Configurar Parametros da BIOS:
 
 Recomendo resetar as configurações da Bios e seguir este passo a passo.
 
@@ -90,7 +90,6 @@ Save Changes & Exit (F10).
 - [ProperTree 0.2.9](https://github.com/corpnewt/ProperTree)
 - [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
 - [iASL Compiler Windows Binary Tools](https://www.intel.com/content/www/us/en/developer/topic-technology/open/acpica/download.html).
-
 
 
 # Kexts Necessarias (Release Only)
@@ -370,6 +369,16 @@ Abra o config.plist da sua EFI.
 - Acesse: Root > Misc > Boot
 - Altere o TimeOut para 10.
 - Salve as Alterações.
+- Dentro do config.plist execute o File > OC Clean SnapShot.
+- Salve e feche o arquivo.
+
+# Ajustando o Wake Up do Sleep ACPI
+- Acesse a [documentação](https://dortania.github.io/OpenCore-Post-Install/usb/misc/instant-wake.html).
+- Baixe o [SSDT-GPRW.aml](https://github.com/dortania/OpenCore-Post-Install/blob/master/extra-files/SSDT-GPRW.aml).
+- Baixe o [GPRW-Patch.plist](https://github.com/dortania/OpenCore-Post-Install/blob/master/extra-files/GPRW-Patch.plist).
+- Salve o SSDT-GPRW.aml Dentro da pasta ACPI da sua EFI.
+- Abra o arquivo GPRW-Patch.plist e delete o final 02 da Chave Find e Replace.
+- Copie o Patch 0 e salve no patch do seu config.plist da sua EFI.
 - Dentro do config.plist execute o File > OC Clean SnapShot.
 - Salve e feche o arquivo.
 
