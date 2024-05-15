@@ -11,8 +11,6 @@
 
 </div>
 
-
-
 # Resumo:
 <div align="center">
   
@@ -27,9 +25,11 @@
 
 </div>
 
-# Passo a Passo:
+# Guia para criar essa EFI
 
-1 - Obter as especificações do computador
+A partir de agora será demonstrado todo passo a passo que realizei para construir essa EFI.
+
+# Obter as especificações do computador
 
 Separe componente por componente, cada hardware tem sua propria configuração.
 
