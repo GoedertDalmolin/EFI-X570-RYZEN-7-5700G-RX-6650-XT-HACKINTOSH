@@ -306,7 +306,6 @@ Caso deseje remover a mensagem de aviso ao instalar software não gerenciados pe
 - [MaciASL](https://github.com/acidanthera/MaciASL/releases/tag/1.6.4)
 - [GfxUtil](https://github.com/acidanthera/gfxutil/releases)
 
-
 # Realizando o FakeId da GPU não suportada
 
 - Faça o download da [SSDT-BRG0.aml](https://github.com/luchina-gabriel/youtube-files/blob/main/Fake-GPUID.zip)
@@ -348,6 +347,19 @@ Dentro do seu config.plist da sua EFI:
 - Salve as Alterações.
 - Dentro do config.plist execute o File > OC Clean SnapShot.
 - Salve e feche o arquivo.
+
+# Renomeando o Processador
+
+- Baixe o [CPU-Name](https://github.com/corpnewt/CPU-Name) corpnewt.
+- Abra o CPU-Name.command.
+- Informe o numero: 4 (Select PList).
+- Arraste seu config.plist da sua EFI para dentro do terminal e pressione enter.
+- Informe o numero: 1 (Change CPU Name).
+- Informe o numero: 2 (Set to 0x0F01 for 8+ Core).
+- Informe o seguinte nome: AMD Ryzen 7 5700G
+- Pressione Enter.
+- Informe a letra: q
+- Pressione Enter.
 
 # Permitindo navegar entre MacOS e Windows de outro disco 
 
