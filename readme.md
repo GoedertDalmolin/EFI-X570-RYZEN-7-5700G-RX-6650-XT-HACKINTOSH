@@ -30,7 +30,6 @@
 | Audio                | ✅      |
 | Mapping USB          | ❌      |
 | Bluetooth            | ❌      |
-| Wifi                 | ❌      |
 | AirDrop              | ❌      |
 
 </div>
