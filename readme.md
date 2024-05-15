@@ -4,6 +4,20 @@
 <img src='.github/about-system-finish.png'>
 </h1>
 
+# Resumo:
+<div align="center">
+  
+| Componente       | Versão                                     |
+|------------------|--------------------------------------------|
+| MacOS            | 14.5 (23F79) (Sonoma)                      |
+| OpenCorePkg      | [1.0.0](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.0) |
+| Motherboard      | Asus TUF Gaming X570-Plus/BR               |
+| Bios             | [5013](https://www.asus.com/br/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x570-plus-br/helpdesk_bios?model2Name=TUF-GAMING-X570-PLUS-BR) (2024/04/04)                                       |
+| CPU              | AMD Ryzen 7 5700G                          |
+| GPU              | AMD Radeon RX 6650 XT                      |
+
+</div>
+
 # Conteúdo deste repositório
 
 <div align="center">
@@ -12,20 +26,6 @@
 |--------------------------------|-----------|
 | EFI pronta para download       | &#9745;   |
 | Guia para criar essa EFI       | &#9745;   |
-
-</div>
-
-# Resumo:
-<div align="center">
-  
-| Componente       | Versão                                     |
-|------------------|--------------------------------------------|
-| MacOS            | 14.4.1 (Sonoma)                            |
-| OpenCorePkg      | [1.0.0](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.0) |
-| Motherboard      | Asus TUF Gaming X570-Plus/BR               |
-| Bios             | [5013](https://www.asus.com/br/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x570-plus-br/helpdesk_bios?model2Name=TUF-GAMING-X570-PLUS-BR) (2024/04/04)                                       |
-| CPU              | AMD Ryzen 7 5700G                          |
-| GPU              | AMD Radeon RX 6650 XT                      |
 
 </div>
 
