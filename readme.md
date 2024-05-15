@@ -488,7 +488,7 @@ No meu caso: PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x6)
 - Root > UEFI > Audio > AudioSuport > Altere para True.
 
 
-# Referencias:
+# Referências:
 - [OpenCore Official Guide](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html).
 - Youtube Channel: [Universo Hackintosh](https://www.youtube.com/@UniversoHackintosh)
 - Github Repository: [Guide to Install MacOS on Ryzen Setup](https://github.com/luchina-gabriel/BASE-EFI-AMD-RYZEN-THREADRIPPER-PUBLIC)
