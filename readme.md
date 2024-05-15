@@ -1,9 +1,14 @@
-# (IN PROGRESS)
-
 # Hackintosh Asus Tuf X570-PLUS/BR + Ryzen 7 5700G + RX 6650 XT
+
+<h1 align="center">
+<img src='.github/about-system-finish.png' width="80%">
+</h1>
+
+# Conteúdo deste repositório
+
 <div align="center">
 
-| Recursos neste Repositório     | Status    |
+| Recursos                       | Status    |
 |--------------------------------|-----------|
 | EFI pronta para download       | &#9745;   |
 | Guia para criar essa EFI       | &#9745;   |
