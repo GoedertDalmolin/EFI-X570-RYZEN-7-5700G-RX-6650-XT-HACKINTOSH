@@ -106,10 +106,12 @@ Save Changes & Exit (F10).
 
 # Ferramentas Necessarias
 
-- [Python 3.12.3](https://www.python.org/downloads/) (Obs: Add Python to Path)
-- [ProperTree 0.2.9](https://github.com/corpnewt/ProperTree)
-- [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
-- [iASL Compiler Windows Binary Tools](https://www.intel.com/content/www/us/en/developer/topic-technology/open/acpica/download.html).
+| Software                            | Link                                                                                       | Notes                      |
+|-------------------------------------|--------------------------------------------------------------------------------------------|----------------------------|
+| Python 3.12.3                       | [Download](https://www.python.org/downloads/)                                              | Add Python to Path         |
+| ProperTree 0.2.9                    | [Download](https://github.com/corpnewt/ProperTree)                                         |                            |
+| GenSMBIOS                           | [Download](https://github.com/corpnewt/GenSMBIOS)                                          |                            |
+| iASL Compiler Windows Binary Tools  | [Download](https://www.intel.com/content/www/us/en/developer/topic-technology/open/acpica/download.html) |                            |
 
 # Kexts Necessarias (Release Only)
 Baixe as Seguintes Kexts:
@@ -314,11 +316,13 @@ Caso deseje remover a mensagem de aviso ao instalar software não gerenciados pe
 
 # Instalando as Ferramentas dentro do MacOS
 
-- [Hackintool](https://github.com/benbaker76/Hackintool/releases/tag/4.0.3)
-- [Python](https://www.python.org/) 
-- [ProperTree](https://github.com/corpnewt/ProperTree)
-- [MaciASL](https://github.com/acidanthera/MaciASL/releases/tag/1.6.4)
-- [GfxUtil](https://github.com/acidanthera/gfxutil/releases)
+| Software      | Link                                                                                   |
+|---------------|----------------------------------------------------------------------------------------|
+| Hackintool    | [Download](https://github.com/benbaker76/Hackintool/releases/tag/4.0.3)                |
+| Python        | [Download](https://www.python.org/)                                                    |
+| ProperTree    | [Download](https://github.com/corpnewt/ProperTree)                                     |
+| MaciASL       | [Download](https://github.com/acidanthera/MaciASL/releases/tag/1.6.4)                  |
+| GfxUtil       | [Download](https://github.com/acidanthera/gfxutil/releases)                            |
 
 # Realizando o FakeId da GPU não suportada
 
