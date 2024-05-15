@@ -18,14 +18,29 @@
 
 </div>
 
+# Features 
+
+| Feature              | Working |
+|----------------------|---------|
+| GPU Fully Supported  | ✅      |
+| Ethernet Network     | ✅      |
+| WakeUp               | ✅      |
+| Audio                | ✅      |
+| Mapping USB          | ❌      |
+| Bluetooth            | ❌      |
+| Wifi                 | ❌      |
+| AirDrop              | ❌      |
+
+**Note:** I don't have a Wireless Network Interface Controller.
+
 # Conteúdo deste repositório
 
 <div align="center">
 
 | Recursos                       | Status    |
 |--------------------------------|-----------|
-| EFI pronta para download       | &#9745;   |
-| Guia para criar essa EFI       | &#9745;   |
+| EFI pronta para download       | ✅        |
+| Guia para criar essa EFI       | ✅        |
 
 </div>
 
