@@ -8,7 +8,6 @@
 | EFI pronta para download       | &#9745;   |
 | Guia para criar essa EFI       | &#9745;   |
 
-
 </div>
 
 # Resumo:
@@ -70,17 +69,14 @@ Restart PC.
 - Advanced Mode (F7) >> Advanced >> Onboard Devices Configuration >> Serial Port Configuration >> Serial Port = Disabled.
 - Advanced Mode (F7) >> Boot >> CSM (Compatibillity Support Module) >> Launch CSM = Disabled.
 
-
 # Enable Bios Config
 - Advanced Mode (F7) >> Advanced >> PCI Subsystem Settings >> Above 4G Decoding = Enabled.
 - Advanced Mode (F7) >> Advanced >>  USB Configuration >> XHCI Hand-Off = Enabled.
 - Advanced Mode (F7) >> Advanced >> SATA Configuration >> Sata Mode = AHCI.
 
-
 (Optional to Force Memory Ram use 3200MHz)
 - Advanced Mode (F7) >> Ai Tweaker >> Ai Overclock Tuner = D.O.C.P.
 - Advanced Mode (F7) >> Ai Tweaker >> D.O.C.P. = DDR4-3200.
-
 
 Save Changes & Exit (F10).
 
@@ -90,7 +86,6 @@ Save Changes & Exit (F10).
 - [ProperTree 0.2.9](https://github.com/corpnewt/ProperTree)
 - [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
 - [iASL Compiler Windows Binary Tools](https://www.intel.com/content/www/us/en/developer/topic-technology/open/acpica/download.html).
-
 
 # Kexts Necessarias (Release Only)
 Baixe as Seguintes Kexts:
@@ -109,8 +104,6 @@ Baixe as Seguintes Kexts:
 | [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases)                         | 1.1.3  | Para corrigir erros do processador.                                                                                                                                                       |
 | [SMCRadeonSensors](https://github.com/ChefKissInc/SMCRadeonSensors/releases)                       | 2.0.0  | Para corrigir obter dados da temperatura da placa de video.                                                                                                                               |
 | [FeatureUnlock](https://github.com/acidanthera/FeatureUnlock/releases)                            | 1.1.5  | Para desbloquear conteudos como Sidecar, NightShift, AirPlay, Universal Control and Continuity Camera support dentro do MacOS.                                                             |
-
-
 # Open Core Pkg
 
 Faça download da versão release 1.0.0 do [OpenCore](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.0).
@@ -129,7 +122,6 @@ Copiando o config.plist base:
 - Acesse: "/OC/".
 - Cole o arquivo e renomeie para "config.plist".
 
-
 Colocando as Kexts necessarias dentro da EFI:
 
 - Copie todas as kexts que baixamos e extraimos anteriormente.
@@ -139,7 +131,6 @@ Colocando as Kexts necessarias dentro da EFI:
 No final você tera o seguinte resultado:
 
 ![Arquivos Kext](.github/pasta-kexts.png)
-
 
 # Gerando o dump das ACPIs do seu computador
 
@@ -381,6 +372,19 @@ Abra o config.plist da sua EFI.
 - Copie o Patch 0 e salve no patch do seu config.plist da sua EFI.
 - Dentro do config.plist execute o File > OC Clean SnapShot.
 - Salve e feche o arquivo.
+
+# Aplicando o Patch SMBUS
+
+- Baixo o arquivo [SSDT-SBUS-MCHC.dsl](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/Source/SSDT-SBUS-MCHC.dsl).
+- Substitua dentro do arquivo o "SBUS" pelo seu device path adequado.
+
+Obs para obter o device path abra o hackintool e pegue por lá.
+
+- Salve como ACPI.
+- Coloque o arquivo gerado dentro da past ACPI da sua EFI.
+- Dentro do config.plist execute o File > OC Clean SnapShot.
+- Salve e feche o arquivo.
+
 
 # Protegendo a EFI de possivel alterações oriundas do Windows
 
