@@ -487,7 +487,7 @@ No meu caso: PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x6)
 - Root > UEFI > Audio > AudioOutMask > Altere para -1.
 - Root > UEFI > Audio > AudioSuport > Altere para True.
 
-# Úteis
+# Optional Fix
 
 [Fix Discord Amd Hackintosh](https://github.com/Pavo-IM/amd_hackintosh_discord_fix/tree/main)
 
